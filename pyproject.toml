@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "barebones-python"
+version = "0.1.0"
+description = ""
+authors = ["david-okeke1337 <140066072+david-okeke1337@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "barebones_python", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+pytest-watch = "^4.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
